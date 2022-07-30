@@ -1,0 +1,377 @@
+:root {
+  --primary-color: #40E0D0;
+  --transition: all 0.2s ease-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  color: var(--primary-color);
+}
+
+img {
+  width: 100%;
+}
+
+.btn-mg {
+  margin: 2rem 1rem;
+}
+
+.mg-top {
+  margin-top: 3.5rem;
+}
+
+/* Buttons */
+.btn {
+  background: none;
+  width: 100%;
+  height: 60px;
+  border: var(--primary-color) solid 2px;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--primary-color);
+  cursor: pointer;
+  transition: var(--transition);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.btn:hover {
+  background: #566AFF;
+  border-color: #566AFF;
+}
+
+.btn-outline {
+  background: none;
+  width: 200px;
+  height: 60px;
+  border: #f4f4f4 solid 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition);
+  color: #f4f4f4;
+}
+
+.btn-outline:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-basic {
+  background: none;
+  width: 200px;
+  height: 60px;
+  border: var(--primary-color) solid 2px;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  background: var(--primary-color);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-basic:hover {
+  background: #72B526;
+  border-color: #72B526;
+}
+
+.btn-dark {
+  background: #4d4d00;
+  border-color: #4d4d00;
+}
+
+.btn-dark:hover {
+  background: #333300;
+  border-color: #333300;
+}
+
+.line {
+  width: 60px;
+  height: 5px;
+  background: var(--primary-color);
+  margin-bottom: 2px;
+}
+
+.line-2 {
+  width: 60px;
+  height: 5px;
+  background: var(--primary-color);
+  margin: 0 0 2px 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Section About */
+#about {
+  padding: 4rem;
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 4rem 0;
+}
+
+#about .about-content h1 {
+  font-size: 2.3rem;
+  width: 320px;
+  margin-bottom: 0.8rem;
+}
+
+#about .about-content p {
+  margin: 1rem 0;
+}
+
+#about .about-image {
+  background: url(https://i.postimg.cc/4yn3rFsz/man.jpg) no-repeat center center/cover;
+  box-shadow: -15px -15px 0px #999;
+}
+
+/* Images */
+.images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 5rem;
+  color: #f4f4f4;
+}
+
+.images .image-left {
+  background: url(https://i.postimg.cc/3wJWXwVS/window.jpg) no-repeat center center/cover;
+  min-height: 350px;
+  position: relative;
+}
+
+.images .image-right {
+  background: url(https://i.postimg.cc/N0gB3Px5/door.jpg) no-repeat center center/cover;
+  min-height: 350px;
+  position: relative;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.heading h1 {
+  font-size: 2.3rem;
+  margin-left: 25px;
+}
+
+.images-content {
+  margin: 4rem 2rem 2rem;
+  padding: 4rem 2rem 2rem;
+  transition: all 0.6s ease-out;
+}
+
+.images-content:hover {
+  background: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  box-shadow: 5px 5px 0px var(--primary-color);
+}
+
+/* Services */
+#services {
+  padding: 3rem;
+  margin-bottom: 5rem;
+}
+
+#services h1 {
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+#services h3 {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+#services .items i {
+  color: #999;
+  margin: 2.5rem 0;
+  padding: 0 1.2rem;
+}
+
+#services .items h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.6rem;
+  padding: 0 1.2rem;
+}
+
+#services .items p {
+  color: #333;
+  margin-bottom: 7rem;
+  padding: 0 1.2rem;
+}
+
+#services .items {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#services .items .item {
+  background: #f6f6ee;
+  position: relative;
+}
+
+/* Counters */
+#counters {
+  background: url(https://i.postimg.cc/Y9P3cZQ7/stairs.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  margin-bottom: 5rem;
+  position: relative;
+  padding: 0 2rem;
+}
+
+#counters:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#counters .counters-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#counters .counters-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#counters .counters {
+  display: grid;
+  grid-column-gap: 60px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 6rem 3rem;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.counter h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+.counter h3 {
+  margin-left: 2rem;
+  color: #fff;
+}
+
+.presentation a {
+  font-size: 2rem;
+  color: #333;
+  padding: 2rem 3rem;
+  background: #fff;
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+.presentation a:hover {
+  color: var(--primary-color);
+}
+
+#counters .presentation {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#counters .counters-grid * {
+  z-index: 2;
+}
+
+.map {
+  height: 400px;
+}
+
+/* Media Queries */
+@media (max-width: 950px) {
+  #counters .counters-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .presentation a {
+    margin-bottom: 1.5rem;
+  }
+
+  #services .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  #about {
+    padding: 0 2rem;
+  }
+
+  #about .about-content {
+    text-align: center;
+  }
+
+  .images {
+    grid-template-columns: 1fr;
+  }
+
+  #services .items {
+    grid-template-columns: 1fr;
+  }
+
+  #counters .counters-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #counters {
+    background-attachment: scroll;
+  }
+
+  #counters .counters {
+    grid-template-columns: 1fr;
+  }
+}
