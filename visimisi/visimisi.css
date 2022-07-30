@@ -1,0 +1,290 @@
+*,
+:after,
+:before {
+ box-sizing:border-box
+}
+
+:root {
+    --warna-satu:#30ced0;
+    --warna-dua:#00a6b5;
+    --warna-hitam:;
+    --warna-tiga:#f4fbfb;
+}
+
+body {
+ margin:0;
+ padding:0;
+ text-decoration:none;
+ scroll-behavior:smooth
+}
+
+.warna-dua {
+ background-color:var(--warna-dua)
+}
+
+.warna-satu {
+ background-color:var(--warna-tiga)
+}
+
+p {
+ word-break:break-word;
+ white-space:normal
+}
+.section-visi-misi {
+ padding:50px 10px
+}
+.visimisi-box {
+ border-radius:4px;
+ text-align:center
+}
+.visimisi-box img {
+ margin:auto
+}
+.visimisi {
+ padding:50px 30px;
+ border-radius:4px;
+ color:#fff;
+ text-align:center
+}
+.visimisi h2 {
+ font-family:Montserrat;
+ font-style:normal;
+ font-weight:700;
+ font-size:42px;
+ line-height:25px;
+ padding-bottom:20px
+}
+.visimisi h2.visi {
+ padding-top:20px
+}
+.visimisi h2.misi {
+ padding-top:50px
+}
+.visimisi p {
+ font-family:Montserrat;
+ font-style:normal;
+ font-weight:400;
+ font-size:14px;
+ line-height:25px
+}
+
+/*   responsive visi misi   */
+
+@media screen and (min-width:768px) {
+ .desktop-visimisi-img {
+  display:none;
+  overflow:hidden;
+  height:0
+ }
+}
+@media screen and (min-width:992px) {
+ .section-visi-misi {
+  padding:100px 30px 150px
+ }
+ .visimisi-box {
+  border-radius:20px;
+  width:100%
+ }
+ .visimisi:before {
+  content:" ";
+  width:186px;
+  height:208px;
+  border-radius:20px;
+  background-color:#3cdcde;
+  position:absolute;
+  margin-top:-100px;
+  margin-left:24.3%
+ }
+ .visimisi {
+  width:50%;
+  padding:100px 110px 60px;
+  margin-left:50%;
+  border-radius:10px 0 0 10px;
+  border:0 solid #e5e5e5;
+  text-align:left
+ }
+ .visimisi h2 {
+  font-family:Montserrat;
+  font-style:normal;
+  font-weight:700;
+  font-size:48px;
+  line-height:56px;
+  padding-bottom:15px
+ }
+ .visimisi h2.visi {
+  padding-top:30px
+ }
+ .visimisi h2.misi {
+  padding-top:35px
+ }
+ .visimisi p {
+  font-family:Montserrat;
+  font-style:normal;
+  font-weight:400;
+  font-size:20px;
+  line-height:37px;
+  letter-spacing:1px
+ }
+ .desktop-visimisi-img {
+  position:absolute;
+  margin-top:110px;
+  margin-left:5%;
+  width:476px;
+  display:block;
+  overflow:none;
+  height:auto
+ }
+ .mobile-visimisi-img {
+  display:none;
+  overflow:hidden;
+  height:0
+ }
+ .section-visi-misi .container {
+  max-width:1320px
+ }
+ .section-visi-misi:before {
+  content:" ";
+  width:247px;
+  height:201px;
+  background-color:#3cdcde;
+  position:absolute;
+  margin-top:570px;
+  margin-left:32.5%
+ }
+
+}
+    
+.section-imageslide {
+    padding:60px 0 30px 
+}
+.box-imageslide {
+    padding:0 20px
+}
+.box-imageslide h2 {
+    width:150px;
+    font-weight:700;
+    font-size:24px;
+    line-height:32px;
+    color:#00a6b5;
+    margin-bottom:30px;
+}
+.box-imageslide h2,
+.box-imageslide p {
+    font-family:Montserrat;
+    font-style:normal;
+}
+.box-imageslide p {
+    font-weight:400;
+    font-size:12px;
+    line-height:24px;
+    text-align:justify
+}
+.box-imageslide .arrow {
+    margin-top:35px;
+    float:right
+}
+.box-imageslide .arrow svg {
+    margin-right:0;
+    margin-left:20px
+}
+.section-imageslide .container.slider {
+    margin:0;
+    padding:0
+}
+.slides-imageslide {
+    clear:both;
+    display:flex;
+    overflow-x:auto;
+    -ms-scroll-snap-type:x mandatory;
+    scroll-snap-type:x mandatory;
+    scroll-behavior:smooth;
+    -webkit-overflow-scrolling:touch
+}
+.slides-imageslide::-webkit-scrollbar {
+    width:10px;
+    height:10px
+}
+.slides-imageslide::-webkit-scrollbar-thumb {
+    background:0 0;
+    border-radius:10px
+}
+.slides-imageslide::-webkit-scrollbar-track {
+    background:0 0
+}
+.slides-imageslide>.blank {
+    width:0
+}
+.slides-imageslide>.blank,
+.slides-imageslide>.imageslide {
+    margin-right:0;
+    min-height:320px;
+    scroll-snap-align:start;
+    flex-shrink:0;
+    transform-origin:center center;
+    transition:transform .5s;
+    position:relative;
+    text-align:left
+}
+.slides-imageslide>.imageslide {
+    width:auto;
+    font-family:Montserrat
+}
+.slides-imageslide .imageslide img {
+    width:auto;
+    height:320px
+}
+
+/* responsive Tim Kami */
+
+@media screen and (min-width:992px) {
+    .section-imageslide {
+     padding:60px 0;
+    }
+    .box-imageslide .container {
+     padding:15px
+    }
+    .box-imageslide {
+     padding:0
+    }
+    .box-imageslide h2 {
+     width:50%;
+     font-style:normal;
+     font-weight:700;
+     font-size:48px;
+     line-height:48px;
+     display:flex;
+     align-items:center;
+     color:#00a6b5;
+     float:none;
+    }
+    .box-imageslide p {
+     font-size:24px;
+     line-height:46px;
+    }
+    .box-imageslide .arrow {
+     margin-top:15px;
+     margin-bottom:45px;
+     float:none
+    }
+    .box-imageslide .arrow svg {
+     margin-right:20px;
+     margin-left:0
+    }
+    .section-imageslide .container.slider {
+     margin:auto;
+     width:auto
+    }
+    .slides-imageslide>.blank {
+     width:0;
+     margin-right:0
+    }
+    .slides-imageslide>.imageslide {
+     width:auto;
+     min-height:453px
+    }
+    .slides-imageslide .imageslide img {
+     width:auto;
+     height:453px
+    }
+}
+   
